@@ -103,7 +103,7 @@
 /* Mostruário */
 .Container-Mostruario {
   width: 60%;
-  height: 60vh;
+  height: 60%;
   display: flex;
   flex-direction: row;
   align-items: center;
