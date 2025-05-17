@@ -1,0 +1,278 @@
+ body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #111;
+  color: white;
+  font-family: 'DM sans', sans-serif;
+  font-size: 16px;
+  width: 100vw;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Container principal */
+.Container-All {
+  flex: 1;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(17,17,17);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  padding-top: 5vh;
+  box-sizing: border-box;
+}
+/* Barra de navegação no topo */
+.Nav-Container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  backdrop-filter: blur(10px);
+  background-color: rgba(88, 88, 88, 0.103);
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+/* Navegação interna da barra */
+.Div-Nav_Container {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 30vh;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgb(102, 102, 102);
+}
+
+/* Texto do menu */
+.Nav-Text {
+  color: rgb(165, 165, 165);
+  font-size: 1.5vw;
+}
+
+/* Cliente com avatar */
+.Client-Container {
+  margin-left: 20px;
+  border: 1px solid rgb(102, 102, 102);
+  border-radius: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 10%;
+}
+
+.Foto-Container {
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 15px;
+}
+
+/* Container de informações */
+.Container-info {
+  width: 80%;
+  height: 80vh;
+  background: linear-gradient(to top, black, rgb(32, 7, 31), rgb(65, 12, 62));
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+/* Animação de aparecer ao rolar */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(40%);
+  transition: all 1s ease-out;
+  visibility: hidden;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(20%);
+  visibility: visible;
+}
+
+/* Mostruário */
+.Container-Mostruario {
+  width: 60%;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+  ellipse, 
+  rgba(32, 7, 31, 0.521) 2%, 
+  rgba(32, 7, 31, 0.596) 10%, 
+  rgb(17,17,17) 70%
+);
+  border-radius: 20px;
+  
+}
+
+/* Divisão esquerda e direita do mostruário */
+.Container-Frase{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+
+}
+
+.Container-Imagens {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Texto da frase */
+.Frase-Mostruario {
+  color: white;
+ margin-left: 20px;
+ font-size: 3vw;;
+}
+
+/* Palavra em destaque */
+.desafio {
+  color: rgb(0, 119, 0);
+  margin-left: 20px;
+  font-size: 3vw;
+}
+
+
+/* Texto Mostruario*/
+.Texto-Mostruario{
+  margin-top: 10px;
+  color: rgb(119, 119, 119);
+ margin-left: 20px;
+ font-size: 1.2vw;
+}
+
+/*Text Button Contrate*/
+.Text-Button{
+color: rgb(255, 252, 252);
+ font-size: 1vw;
+ font-family: 'DM Sans', sans-serif;
+}
+
+/*Button Contrate*/
+.Button-Contrate{
+  margin-left: 20px;
+  width: 30%;
+  height: 10%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(2, 22, 2);
+}
+
+
+/*Div Footer*/
+.Div-Footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  width:100%;
+}
+
+/*Div-Footer-sub*/
+.Div-Footer-sub{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  width:80%;
+}
+
+/*hr*/
+hr{
+  background-color: rgb(255, 255, 255);
+  height: 4px;
+  width: 80%;
+  border: none;
+}
+
+/*/*Div-Footer-sub-sub*/
+.Div-Footer-sub-sub{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  width:80%;
+}
+
+/*Container do footer*/
+.Container-Footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  height: 40vh;
+  width:100vw;
+}
+.Div-icones{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  width:80%;
+}
+
+/*Text Footer*/
+.Text-Footer{
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
+
+
+/*estilização dos icones whatts insta fac*/
+.social-icon {
+  font-size: 2rem;
+  margin-right: 2%;
+  color: white;
+  transition: color 0.3s;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  color: rgb(158, 158, 10);
+  transform: scale(1.1);
+}
+
+/*Img Logo*/
+.Img-Logo{
+  height: 25%;
+  width: 6%;
+  border-radius: 5%;
+  margin-bottom: 1%;
+}
+
+/*Img logo Nav*/
+.Img-Logo-nav{
+  height: 35%;
+  width: 5%;
+  border-radius: 5%;
+}
+
+
