@@ -1,7 +1,8 @@
-
+import img_logo from "../assets/logoNova.png"
 function Nav(){
     return(
         <nav className="Nav-Container">
+            <img src={img_logo} className="Img-Logo-nav" alt="" />
             <div className="Div-Nav_Container">
                 <label className="Nav-Text">Home</label>
                 <label className="Nav-Text">Serviços</label>

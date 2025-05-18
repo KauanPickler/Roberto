@@ -5,7 +5,8 @@ import './App.css'
 import Nav  from "./Paginas/nav";
 import Servicos from './Paginas/servicos';
 import Mostruario from './Paginas/mostruario';
-import Footer from './Paginas/footer'
+import Footer from './Paginas/footer';
+import Informacoes from './Paginas/informacoes';
 function App() {
   const [count, setCount] = useState(0)
   const [sections, setSections] = useState(null)
@@ -33,6 +34,7 @@ function App() {
 
       <Nav/>
       <Mostruario />
+      <Informacoes />
       <Servicos />
       <Footer />
       

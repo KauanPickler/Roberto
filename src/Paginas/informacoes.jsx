@@ -3,7 +3,7 @@
 function Servicos(){
     
     return(
-        <div className="Container-servicos fade-in-section Div-Info" id="Div-Info">
+        <div className="Container-info fade-in-section Div-Info" id="Div-Info">
 
         </div>
     )
