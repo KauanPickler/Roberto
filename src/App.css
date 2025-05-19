@@ -57,6 +57,8 @@
 .Nav-Text {
   color: rgb(165, 165, 165);
   font-size: 1.5vw;
+  transition: 1s;
+  cursor: pointer;
 }
 
 /* Cliente com avatar */
@@ -84,7 +86,7 @@
   height: 80vh;
   background: linear-gradient(
     to bottom, 
-    rgba(3, 36, 58, 0.20) 0%, 
+    rgba(46, 4, 80, 0.63) 0%, 
     rgba(3, 36, 58, 0.00) 100%
   );
   border-radius: 20px;
@@ -96,7 +98,7 @@
   height: 80vh;
   background: linear-gradient(
     to top, 
-    rgba(3, 36, 58, 0.20) 0%, 
+    rgba(46, 4, 80, 0.63) 0%, 
     rgba(3, 36, 58, 0.00) 100%
   );
   border-radius: 20px;
@@ -118,9 +120,9 @@
 
 /* Mostruário */
 .Container-Mostruario {
+  flex-wrap: wrap;
   width: 60%;
   height: 40%;
-  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -163,7 +165,7 @@
 
 /* Palavra em destaque */
 .desafio {
-  color: rgb(0, 119, 0);
+  color: rgb(1, 179, 1);
   margin-left: 20px;
   font-size: 3vw;
 }
@@ -193,7 +195,7 @@ color: rgb(255, 252, 252);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(2, 22, 2);
+  background-color: rgb(1, 129, 1);
 }
 
 
@@ -277,10 +279,24 @@ hr{
   transform: scale(1.1);
 }
 
+.social-icon-ult {
+  font-size: 2rem;
+  
+  color: white;
+  transition: color 0.3s;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.social-icon-ult:hover {
+  color: rgb(158, 158, 10);
+  transform: scale(1.1);
+}
+
 /*Img Logo*/
 .Img-Logo{
   height: 25%;
-  width: 6%;
+  width: 10%;
   border-radius: 5%;
   margin-bottom: 1%;
 }
@@ -288,15 +304,115 @@ hr{
 /*Img logo Nav*/
 .Img-Logo-nav{
   height: 70%;
-  width: 4%;
+  width: 6%;
   border-radius: 5%;
   margin-right: 5%;
 }
 
+/*fontes aumenta de tamanho*/
+.Nav-Text:hover{
+  transform: scale(1.1);
+  color: rgb(105, 105, 9);
+}
+.Client-Container:hover .social-icon,
+.Client-Container:hover .Nav-Text {
+  color: rgb(194, 194, 57); /* ou qualquer amarelo desejado */
+}
 
 
+.SobreNos-Container {
+  margin-top: 200px;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  font-family: 'DM Sans', sans-serif;
+  color: #333;
+}
+
+.Equipe-Historia {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.Equipe-Historia h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.Equipe-Historia p {
+  font-size: 18px;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.Membros-Equipe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.Membro {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.Foto-Membro {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.Membro h3 {
+  margin: 10px 0 8px;
+  font-size: 20px;
+}
+
+.Membro p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.Imgs-Container{
+  width: 20vw;
+  height: 35vh;
+  margin: 2%;
+  background-color: black;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.pos-1{
+  position: absolute;
+  top: 20vh;
+  background-color: white;
+  left: 40vw;
+}
+.pos-2{
+  position: absolute;
+  top: 15vh;
+  left: 35vw;
+}
+.pos-3{
+  position: absolute;
+  top: 10vh;
+  left: 30vw;
+  background-color: yellow;
+} 
 
 @media (max-width: 768px) {
+  .Container-Mostruario {
+    flex-direction: column; /* empilha as seções */
+    align-items: center;
+  }
+
   body {
     font-size: 14px;
   }

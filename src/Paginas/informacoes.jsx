@@ -1,6 +1,6 @@
 
 
-function Servicos(){
+function Informacoes(){
     
     return(
         <div className="Container-info fade-in-section Div-Info" id="Div-Info">
@@ -9,4 +9,4 @@ function Servicos(){
     )
 }
 
-export default Servicos;
+export default Informacoes;
